@@ -153,17 +153,17 @@
     </div>
 
     <!-- Header and Navigation -->
-    <main id="mainContent">
+    <div id="mainContent">
 
         <header id="header" class="container-fluid navbar-container animated pulse">
             <nav class="row bg-white nav">
-                <div class="col-xl-1 col-md-0"></div>
-                <div id="gradient" class="gradient span col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                <div class="col-xl-1"></div>
+                <div id="gradient" class="gradient span col-xl-4 col-lg-12 col-md-12 col-sm-12">
                     <span class="navbar-brand justify-content-center m-x-3 text-white" id="navbartext">Andrew
                         Weiss</span>
                 </div>
-                <div class="col-xl-6 col-md-6 col-sm-12 justify-content-end">
-                    <ul class="nav">
+                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 justify-content-end">
+                    <ul class="navigation nav">
                         <li class="nav-item">
                             <a id="aboutMeLink" class="nav-link" href="#aboutMe">About</a>
                         </li>
@@ -174,252 +174,274 @@
                             <a id="contactLink" class="nav-link" href="#contactMe">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="assets/images/Resume 2019 (Education).pdf">Resume</a>
+                            <a class="nav-link" href="assets/images/Resume 2019 (Education).pdf" target="_blank">Resume</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-1"></div>
+                <div class="col-xl-1"></div>
             </nav>
         </header>
 
         <!-- About Me Section -->
+        <main>
 
-        <section id="aboutMe" class="container-fluid background-image main-content row">
-            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
-            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12 justify-content-start main-container">
-                <div class="row bg-white">
+            <section id="aboutMe" class="container-fluid background-image main-content row">
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12 justify-content-start main-container">
+                    <div class="row bg-white">
 
-                    <!-- Main Form Content -->
+                        <!-- Main Form Content -->
 
-                    <div class="content-card col-xl 12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h2 id="gradientText">About Me</h2>
-                        <hr>
-                        <img class="profile-pic img-fluid rounded float-left" src="assets/images/Me.jpg"
-                            alt="Picture of me">
-                        <p>Hello, everyone! I’m Andrew and welcome to my website. Here you can find some information
-                            about
-                            me.
-                            Head to my portfolio to see some of the work I completed during my coding bootcamp at the
-                            University
-                            of Washington. Feel free to send me a message or ask a question via the contact page.</p>
-                        <p>A little about myself, I’m a UW graduate with a degree in linguistics with eight years of
-                            teaching
-                            experience in Cambodia. I’ve been working as a first-grade teacher in the capitol Phnom Penh
-                            for
-                            the
-                            last two years and despite enjoying the profession immensely, I’m not interested in
-                            continuing
-                            down
-                            the career pathway in education stateside. Web development never really stood out to me
-                            until
-                            recently but being really detail-oriented and naturally interested in the syntax and logic
-                            of
-                            computer language has made me want to pursue it professionally. The design aspects of web
-                            development also appeal to my need for a creative outlet. I'm excited to make the leap into
-                            the
-                            web development industry upon completion of this bootcamp. </p>
-                        <p>Outside of work and studying, I love to hike and travel. While living in Asia, I was able to
-                            travel
-                            regularly throughout the region. Hiking along Tiger Leaping Gorge in Yunnan Province of
-                            China
-                            was a
-                            highlight, as was jungle trekking and orangutan viewing in Borneo. Despite my love for
-                            travel
-                            I’m a
-                            bit of a homebody and prefer to spend my evening reading, watching YouTube or playing board
-                            games
-                            particularly Disney trivia games.</p>
-                    </div>
-
-                    <!-- End of main form content -->
-
-                </div>
-            </div>
-            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
-        </section>
-
-        <!-- Portfolio Section -->
-
-
-        <section id="portfolio" class="container-fluid background-image main-content row">
-            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
-            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12 justify-content-start main-container">
-                <div class="row bg-white">
-
-                    <!-- Main Form Content -->
-
-                    <div class="content-card col-xl 12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h2>Portfolio</h2>
-                        <hr>
-                        <section class="portfolio" id="portfolio">
-                            <ul>
-                                <!-- Project One -->
-                                <li>
-                                    <figure>
-                                        <img class="portfolioPhoto" src="assets/images/image-1.jpg"
-                                            alt="Music Modus Application">
-                                        <figcaption>
-                                            <h3 class="caption">Music Modus</h3>
-                                        </figcaption>
-                                    </figure>
-                                    <p class="description">
-                                        Music Modus is an interactive web based application built with purpose of
-                                        providing
-                                        a resource for users to learn more about the artists and the songs that they
-                                        love.
-                                        This application takes the users' input from the search field and returns
-                                        information on the artist, a censored or uncensored copy of the lyrics, and
-                                        displays
-                                        a YouTube video of the artist and their song. The application was styled using
-                                        CSS
-                                        and JavaScript interactivity. Bootstrap and CSS media queries were used to
-                                        create
-                                        mobile responsiveness. The information is being pulled from five different APIs
-                                        and
-                                    </p>
-                                    <div class="portfolioContainerLink">
-                                        <a href="https://wandrew8.github.io/ProjectOne/">Visit Website</a>
-                                    </div>
-                                </li>
-                                <!-- Project Two -->
-                                <li>
-                                    <figure>
-                                        <img class="portfolioPhoto" src="assets/images/image-1.jpg" alt="Hangman">
-                                        <figcaption>
-                                            <h3 class="caption">New York Times Search</h3>
-                                        </figcaption>
-                                    </figure>
-                                    <p class="description">
-                                        A search engine application built using the New York Times API to find articles
-                                        by
-                                        topic and year of publication. This collaborative project was built using HTML,
-                                        CSS
-                                        and JavaScript.
-                                    </p>
-                                    <div class="portfolioContainerLink">
-                                        <a href="https://wandrew8.github.io/NYTimesSearch/">Visit Website</a>
-                                    </div>
-                                </li>
-                                <!-- Project Three -->
-                                <li>
-                                    <figure>
-                                        <img class="portfolioPhoto" src="assets/images/image-1.jpg"
-                                            alt="Trivia Game Application">
-                                        <figcaption>
-                                            <h3 class="caption">Ocean Trivia Game</h3>
-                                        </figcaption>
-                                    </figure>
-                                    <p class="description">
-                                        A timed trivia game themed around the ocean. The timer functions and score
-                                        system were created using JavaScript. The page was
-                                        styled using bootstrap and external CSS.
-                                    </p>
-                                    <div class="portfolioContainerLink">
-                                        <a href="https://wandrew8.github.io/TriviaGame/">Visit Website</a>
-                                    </div>
-                                </li>
-                                <!-- Project Four -->
-                                <li>
-                                    <figure>
-                                        <img class="portfolioPhoto" src="assets/images/image-1.jpg"
-                                            alt="GifTastic Application">
-                                        <figcaption>
-                                            <h3 class="caption">GifTastic</h3>
-                                        </figcaption>
-                                    </figure>
-                                    <p class="description">
-                                        A search engine application built using the Giphy API to find age-appropriate
-                                        gifs
-                                        by the user's input. Ajax calls and site interactivity were handled with JQuery
-                                        while mobile responsiveness and styling were handled with Bootstrap and CSS.
-                                    </p>
-                                    <div class="portfolioContainerLink">
-                                        <a href="https://wandrew8.github.io/GifTastic/">Visit Website</a>
-                                    </div>
-                                </li>
-                                <!-- Project Five -->
-                                <li>
-                                    <figure>
-                                        <img class="portfolioPhoto" src="assets/images/image-1.jpg"
-                                            alt="Crystal Collector Application">
-                                        <figcaption>
-                                            <h3 class="caption">Crystal Collector</h3>
-                                        </figcaption>
-                                    </figure>
-                                    <p class="description">
-                                        A game of collecting crystals with unknown values to match the generated
-                                        computer
-                                        score. The game dynamics and logic were written using JavaScript / JQuery while
-                                        the styling
-                                        was achieved with CSS and bootstrap grid system for mobile responsiveness.
-                                    </p>
-                                    <div class="portfolioContainerLink">
-                                        <a href="https://wandrew8.github.io/Unit-4-Game/">Visit Website</a>
-                                    </div>
-                                </li>
-                                <!-- Project Six -->
-
-                            </ul>
-                        </section>
+                        <div class="content-card col-xl 12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h2 class="headingTwo">About Me</h2>
+                            <hr>
+                            <img class="profile-pic img-fluid rounded float-left" src="assets/images/Me.jpg"
+                                alt="Picture of me">
+                            <p>Hello, everyone! I’m Andrew and welcome to my website. Here you can find some information
+                                about
+                                me.
+                                Head to my portfolio to see some of the work I completed during my coding bootcamp at
+                                the
+                                University
+                                of Washington. Feel free to send me a message or ask a question via the contact page.
+                            </p>
+                            <p>A little about myself, I’m a UW graduate with a degree in linguistics with eight years of
+                                teaching
+                                experience in Cambodia. I’ve been working as a first-grade teacher in the capitol Phnom
+                                Penh
+                                for
+                                the
+                                last two years and despite enjoying the profession immensely, I’m not interested in
+                                continuing
+                                down
+                                the career pathway in education stateside. Web development never really stood out to me
+                                until
+                                recently but being really detail-oriented and naturally interested in the syntax and
+                                logic
+                                of
+                                computer language has made me want to pursue it professionally. The design aspects of
+                                web
+                                development also appeal to my need for a creative outlet. I'm excited to make the leap
+                                into
+                                the
+                                web development industry upon completion of this bootcamp. </p>
+                            <p>Outside of work and studying, I love to hike and travel. While living in Asia, I was able
+                                to
+                                travel
+                                regularly throughout the region. Hiking along Tiger Leaping Gorge in Yunnan Province of
+                                China
+                                was a
+                                highlight, as was jungle trekking and orangutan viewing in Borneo. Despite my love for
+                                travel
+                                I’m a
+                                bit of a homebody and prefer to spend my evening reading, watching YouTube or playing
+                                board
+                                games
+                                particularly Disney trivia games.</p>
+                        </div>
 
                         <!-- End of main form content -->
 
                     </div>
                 </div>
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
-        </section>
+            </section>
 
-        <!-- Contact Me / Form Section -->
+            <!-- Portfolio Section -->
 
-        <section id="contactMe" class="container-fluid background-image main-content row">
-            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
-            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12 justify-content-start main-container">
-                <div class="row bg-white">
 
-                    <!-- Main Form Content -->
+            <section id="portfolio" class="container-fluid background-image main-content row">
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12 justify-content-start main-container">
+                    <div class="row bg-white">
 
-                    <form class="content-card col-xl 12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h2>Contact</h2>
-                        <hr>
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input type="username" class="form-control">
+                        <!-- Main Form Content -->
+
+                        <div class="content-card col-xl 12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h2 class="headingTwo">Portfolio</h2>
+                            <hr>
+                            <section class="portfolio" id="portfolio">
+                                <ul>
+                                    <!-- Project One -->
+                                    <li>
+                                        <figure>
+                                            <img class="portfolioPhoto" src="assets/images/music-modus.PNG"
+                                                alt="Music Modus Application">
+                                            <figcaption>
+                                                <h3 class="caption">Music Modus</h3>
+                                            </figcaption>
+                                        </figure>
+                                        <p class="description">
+                                            Music Modus is an interactive web based application built with purpose of
+                                            providing
+                                            a resource for users to learn more about the artists and the songs that they
+                                            love.
+                                            This application takes the users' input from the search field and returns
+                                            information on the artist, a censored or uncensored copy of the lyrics, and
+                                            displays
+                                            a YouTube video of the artist and their song. The application was styled
+                                            using
+                                            CSS
+                                            and JavaScript interactivity. Bootstrap and CSS media queries were used to
+                                            create
+                                            mobile responsiveness. The information is being pulled from five different
+                                            APIs
+                                            and
+                                        </p>
+                                        <div class="portfolioContainerLink">
+                                            <a href="https://wandrew8.github.io/ProjectOne/" target="_blank">Visit Website</a>
+                                        </div>
+                                    </li>
+                                    <!-- Project Two -->
+                                    <li>
+                                        <figure>
+                                            <img class="portfolioPhoto" src="assets/images/NYTimes.PNG" alt="Hangman">
+                                            <figcaption>
+                                                <h3 class="caption">New York Times Search</h3>
+                                            </figcaption>
+                                        </figure>
+                                        <p class="description">
+                                            A search engine application built using the New York Times API to find
+                                            articles
+                                            by
+                                            topic and year of publication. This collaborative project was built using
+                                            HTML,
+                                            CSS
+                                            and JavaScript.
+                                        </p>
+                                        <div class="portfolioContainerLink">
+                                            <a href="https://wandrew8.github.io/NYTimesSearch/" target="_blank">Visit Website</a>
+                                        </div>
+                                    </li>
+                                    <!-- Project Three -->
+                                    <li>
+                                        <figure>
+                                            <img class="portfolioPhoto" src="assets/images/trivia-game.PNG"
+                                                alt="Trivia Game Application">
+                                            <figcaption>
+                                                <h3 class="caption">Ocean Trivia Game</h3>
+                                            </figcaption>
+                                        </figure>
+                                        <p class="description">
+                                            A timed trivia game themed around the ocean. The timer functions and score
+                                            system were created using JavaScript. The page was
+                                            styled using bootstrap and external CSS.
+                                        </p>
+                                        <div class="portfolioContainerLink">
+                                            <a href="https://wandrew8.github.io/TriviaGame/" target="_blank">Visit Website</a>
+                                        </div>
+                                    </li>
+                                    <!-- Project Four -->
+                                    <li>
+                                        <figure>
+                                            <img class="portfolioPhoto" src="assets/images/giphy.PNG"
+                                                alt="GifTastic Application">
+                                            <figcaption>
+                                                <h3 class="caption">GifTastic</h3>
+                                            </figcaption>
+                                        </figure>
+                                        <p class="description">
+                                            A search engine application built using the Giphy API to find
+                                            age-appropriate
+                                            gifs
+                                            by the user's input. Ajax calls and site interactivity were handled with
+                                            JQuery
+                                            while mobile responsiveness and styling were handled with Bootstrap and CSS.
+                                        </p>
+                                        <div class="portfolioContainerLink">
+                                            <a href="https://wandrew8.github.io/GifTastic/" target="_blank">Visit Website</a>
+                                        </div>
+                                    </li>
+                                    <!-- Project Five -->
+                                    <li>
+                                        <figure>
+                                            <img class="portfolioPhoto" src="assets/images/crystal-collector.PNG"
+                                                alt="Crystal Collector Application">
+                                            <figcaption>
+                                                <h3 class="caption">Crystal Collector</h3>
+                                            </figcaption>
+                                        </figure>
+                                        <p class="description">
+                                            A game of collecting crystals with unknown values to match the generated
+                                            computer
+                                            score. The game dynamics and logic were written using JavaScript / JQuery
+                                            while
+                                            the styling
+                                            was achieved with CSS and bootstrap grid system for mobile responsiveness.
+                                        </p>
+                                        <div class="portfolioContainerLink">
+                                            <a href="https://wandrew8.github.io/Unit-4-Game/" target="_blank">Visit Website</a>
+                                        </div>
+                                    </li>
+                                    <!-- Project Six -->
+
+                                </ul>
+                            </section>
+
+                            <!-- End of main form content -->
+
                         </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-                        </div>
-                        <div class="formContainerLink">
-                            <a href="#">Submit</a>
-                        </div>
-                    </form>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+            </section>
 
-                    <!-- End of main form content -->
+            <!-- Contact Me / Form Section -->
 
+            <section id="contactMe" class="container-fluid background-image main-content row">
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12 justify-content-start main-container">
+                    <div class="row bg-white">
+
+                        <!-- Main Form Content -->
+
+                        <form class="content-card col-xl 12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h2 class="headingTwo">Contact</h2>
+                            <hr>
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                            </div>
+                            <div class="formContainerLink">
+                                <a href="#">Submit</a>
+                            </div>
+                        </form>
+
+                        <!-- End of main form content -->
+
+                    </div>
                 </div>
-            </div>
-            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
-        </section>
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+            </section>
 
-        <!-- Footer -->
+            <!-- Footer -->
 
-        <footer class="page-footer container-fluid font-small blue">
+            <footer class="gradient page-footer container-fluid font-small blue">
 
-            <div class="footer-copyright text-center py-3">
-                <span class="font-small footer text-white">&copy; Copyright</span>
-            </div>
-        </footer>
+                <div class="footer-copyright text-center py-3">
+                    <a class="icon" href="https://github.com/wandrew8" target="_blank"><span style="font-size: 3em; color: white;"><i class="fab fa-github-square"></i></span></a>
+                    <a class="icon" href="https://www.linkedin.com/in/andrew-weiss-18a2bb75/" target="_blank"><span style="font-size: 3em; color: white;"><i class="fab fa-linkedin"></i></span></a>
+                    <a class="icon" href="https://www.facebook.com/andy.weiss.988?ref=bookmarks" target="_blank"><span style="font-size: 3em; color: white;"><i class="fab fa-facebook-square"></i></span></a>
+                    <br>
+                    <span class="copyright font-small footer text-white">&copy; Copyright</span>
+                </div>
+            </footer>
 
 
 
 
-    </main>
+        </main>
+    </div>
 </body>
 
+<script src="https://use.fontawesome.com/releases/v5.10.2/js/all.js" data-auto-replace-svg="nest"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <script src="assets/JavaScript/app.js"></script>
 

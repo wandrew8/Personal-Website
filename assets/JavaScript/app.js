@@ -67,25 +67,13 @@ function updateGradient() {
     }
 }
 
-setInterval(updateGradient, 10);
-
-
-//Paragraph Scroll Over Effect
-
-$("p.description").on("mouseover", function () {
-    $(this).css("height", "auto");
-})
-
-$("p.description").on("mouseout", function () {
-    $(this).css("height", "75px");
-})
+setInterval(updateGradient, 5);
 
 //Opening Page Down Arrow Scroll Effect
 
 $("#sectionArrow").on('click', function () {
-    $("#openingPage").css("display", "none");
-    $("#mainContent").css("display", "block");
-    $('html, body').animate({ scrollTop: $('#header').position().top }, 'slow');
+    $("#openingPage").slideUp(1200);
+    $("#mainContent").fadeIn();
 });
 
 //Link Scroll Down Effects
