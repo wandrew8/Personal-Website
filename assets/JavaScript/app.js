@@ -94,4 +94,3 @@ $("#portfolioLink").on('click', function () {
 $( document ).ready(function() {
     $("#mainContent").css("display", "none");
 });
-
