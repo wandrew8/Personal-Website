@@ -461,6 +461,23 @@ h5 {
 
 /*Button Styling */
 
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #E2E2E2;
+    padding: 20px;
+}
+
+.portfolioContainerLink:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.portfolioContainerLink a {
+    padding: 8px 15px;
+
+}
+
 .portfolio a {
     background-color: #1B9CFC;
     text-decoration: none;
@@ -533,10 +550,6 @@ h5 {
     transition-duration: 4s;
 }
 
-.portfolioContainerLink {
-    border-top: 2px solid #E2E2E2;
-    padding: 20px;
-}
 
 .portfolioPhoto:hover {
     transform: scale(1.2);
@@ -571,7 +584,7 @@ form a {
 
 footer {
     height: auto;
-    position: absolute;
+    
 }
 
 .footer {
@@ -581,6 +594,10 @@ footer {
 .icon {
     margin: 0em 0.5em;
 
+}
+
+.footer-copyright {
+    background: transparent;
 }
 
 .copyright {
