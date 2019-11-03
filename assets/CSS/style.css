@@ -4,8 +4,12 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h2, h3, a {
+h2, h3, a, .footer-title {
     font-family: 'Julius Sans One', sans-serif;
+}
+
+.footer-title {
+    font-size: 2rem;
 }
 
 .headingTwo {
