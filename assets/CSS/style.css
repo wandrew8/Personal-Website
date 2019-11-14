@@ -1,7 +1,8 @@
 /* Body Styling */
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300 !important;
 }
 
 h2, h3, a, .footer-title {
@@ -14,7 +15,6 @@ h2, h3, a, .footer-title {
 
 .headingTwo {
     text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 /* Opening Page */
@@ -214,7 +214,7 @@ main {
 
 .openingContent p {
     padding: 2rem;
-    border: 5px solid;
+    border: 1px solid;
     border-image: linear-gradient(90deg, transparent 0%, transparent 10%, #fff 25%, #fff 75%, transparent 90%, transparent 100%) 30;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 2rem;
@@ -323,11 +323,6 @@ main {
 
 #header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-a:hover {
-    color: #1B9CFC;
 }
 
 .navbar-brand {
@@ -348,10 +343,14 @@ a:hover {
 
 .nav-link {
     height: 2em;
-    color: #cccccc;
+    color: #444!important;
     margin: 20px auto;
     font-size: 1.4rem;
     padding: 20px;
+}
+
+.nav-link:hover {
+    color: #1B9CFC !important;
 }
 
 .gradient {
@@ -474,12 +473,10 @@ h5 {
 
 .portfolioContainerLink:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .portfolioContainerLink a {
     padding: 8px 15px;
-
 }
 
 .portfolio a {
@@ -507,7 +504,6 @@ h5 {
 
 .portfolio>ul>li:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .portfolio>ul>li>figure {
@@ -554,12 +550,34 @@ h5 {
     transition-duration: 4s;
 }
 
-
 .portfolioPhoto:hover {
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     z-index: 0;
+}
+
+/* Skills Styling */
+
+.skill-header {
+    margin: 15px 0px;
+    font-weight: 700;
+}
+
+.skill {
+    padding: 0rem;
+    margin: 5px 0px;
+}
+
+.skills-row {
+    padding-bottom: 2rem;
+}
+
+.determinate {
+    width: 0%;
+    -webkit-transition: width 3s !important;
+    transition: width 3s !important;
+    transition-timing-function: ease-out !important;
 }
 
 /* Form Styling */
@@ -588,16 +606,22 @@ form a {
 
 footer {
     height: auto;
-    
+}
+
+.contact-info {
+    margin: 2rem 0rem 3rem 0rem;
 }
 
 .footer {
     font-size: 1rem;
 }
 
+.contact-info p, .contact-info a {
+    line-height: 1rem;
+}
+
 .icon {
     margin: 0em 0.5em;
-
 }
 
 .footer-copyright {
@@ -605,40 +629,91 @@ footer {
 }
 
 .copyright {
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
 
+footer p, .footer-nav {
+    font-size: 1rem;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300 !important;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.footer-row {
+    width: 75vw;
+}
+
+#top-button {
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+.footerPhoto {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-top: 3rem;
+}
 
 /* Media Queries */
 
 /* Desktop Screen Size */
+
 @media screen and (max-width:1200px) {
     .navigation {
         justify-content: center;
     }
+    .footerPhoto {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-top: 3rem;
+    }
 }
 
 /* Iphone 6+ Screen Size */
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 990px) {
     #logo2 {
         display: flex;
     }
     #logo {
         display: none;
     }
+    .footerPhoto {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-top: 3rem;
+    }
 }
 
 /* Ipad Screen Size */
+
 @media screen and (max-width:768px) {
     .openingContent p {
         padding: 2rem;
         font-size: 2rem;
+        border: 0px solid;
+        border-image: linear-gradient(90deg, transparent 0%, transparent 10%, #fff 25%, #fff 75%, transparent 90%, transparent 100%) 30;
     }
     .portfolio>ul>li {
-    position: relative;
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+        position: relative;
+        border-radius: 0px;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+    }
+    .footerPhoto {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-top: 0rem;
     }
 }
 
@@ -659,13 +734,23 @@ footer {
         padding: 1rem;
         font-size: 1.25rem;
     }
+    .content-card {
+        padding: 1rem;
+    }
     .navbar-brand {
         font-size: 2.5em;
     }
-
+    .footerPhoto {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-top: 0rem;
+    }
 }
 
 /* Iphone 5 Screen Size */
+
 @media screen and (max-width:320px) {
     .navbar-brand {
         font-size: 2em;

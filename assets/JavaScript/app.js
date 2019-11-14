@@ -78,19 +78,48 @@ $("#sectionArrow").on('click', function () {
 
 //Link Scroll Down Effects
 
-$("#aboutMeLink").on('click', function () {
-    $('html, body').animate({ scrollTop: $('#aboutMe').position().top }, 'slow');
+$("#contactMeLink").on('click', function () {
+    $('html, body').animate({ scrollTop: $('#contactMe').position().top }, 4000);
 });
 
-$("#contactLink").on('click', function () {
-    $('html, body').animate({ scrollTop: $('#contactMe').position().top }, 'slow');
+$("#skillsLink").on('click', function () {
+    $('html, body').animate({ scrollTop: $('#skills').position().top }, 3500);
 });
 
 $("#portfolioLink").on('click', function () {
-    $('html, body').animate({ scrollTop: $('#portfolio').position().top }, 'slow');
+    $('html, body').animate({ scrollTop: $('#portfolio').position().top }, 2000);
+});
+
+$("#top-button").on("click", function () {
+    $('html, body').animate({ scrollTop: $('#mainContent').offset().top }, 3000);
+});
+
+// Navigation Bar Scroll Effects
+
+$("#footerAboutMeLink").on("click", function () {
+    $('html, body').animate({ scrollTop: $('#mainContent').offset().top }, 4000);
+});
+
+$("#footerPortfolioLink").on("click", function () {
+    $('html, body').animate({ scrollTop: $('#portfolio').offset().top }, 3000);
+});
+
+$("#footerSkillsLink").on("click", function () {
+    $('html, body').animate({ scrollTop: $('#skills').position().top }, 2000);
 });
 
 // On Page Load Effect 
 $( document ).ready(function() {
     $("#mainContent").css("display", "none");
+    loadSkills();
 });
+
+// Skills progress bar Effect
+function loadSkills() {
+    /*for each progress bar in the skill section, 
+    set the percent loaded to the data-percent attribute */
+    $('.determinate').each(function() {
+      $(this).width($(this).data('percent') + '%');
+    });
+  }
+  

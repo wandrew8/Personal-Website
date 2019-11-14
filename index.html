@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <!-- Material Design Bootstrap -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/CSS/style.css">
@@ -170,13 +169,13 @@
                 <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 justify-content-end">
                     <ul class="navigation nav">
                         <li class="nav-item">
-                            <a id="aboutMeLink" class="nav-link" href="#aboutMe">About</a>
+                            <a id="portfolioLink" class="nav-link">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a id="portfolioLink" class="nav-link" href="#portfolio">Portfolio</a>
+                            <a id="skillsLink" class="nav-link">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a id="contactLink" class="nav-link" href="#contactMe">Contact</a>
+                            <a id="contactMeLink" class="nav-link">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="assets/images/Resume 2019 (Education).pdf"
@@ -278,17 +277,27 @@
                                             </figcaption>
                                         </figure>
                                         <p class="description">
-                                            Olaf is a community-driven food service web application which offers both seller
-                                            and customer interactivity. Users can create an account as either a customer or
-                                            chef for different user experiences. As a chef, the user can create food items to 
-                                            post online. (Photos can be added to the online items through the use of Cloudinary.) 
-                                            Once the chef is online, their address is converted to geo-coordinates using the 
-                                            Geocoding API, and the chef's location is placed on a map using Google Maps API. 
-                                            Now the customer can search the map to find online chef's and shop for items to add 
-                                            to their cart. Once a customer has completed checkout, the customer and chef are 
-                                            notified of order details via text message through the use of Twilio. This application
-                                            was created using React and MDBootstrap on the front end. Data is stored in a MySQL
-                                            database with the use of Sequelize NPM.  
+                                            Olaf is a community-driven food service web application which offers both
+                                            seller
+                                            and customer interactivity. Users can create an account as either a customer
+                                            or
+                                            chef for different user experiences. As a chef, the user can create food
+                                            items to
+                                            post online. (Photos can be added to the online items through the use of
+                                            Cloudinary.)
+                                            Once the chef is online, their address is converted to geo-coordinates using
+                                            the
+                                            Geocoding API, and the chef's location is placed on a map using Google Maps
+                                            API.
+                                            Now the customer can search the map to find online chef's and shop for items
+                                            to add
+                                            to their cart. Once a customer has completed checkout, the customer and chef
+                                            are
+                                            notified of order details via text message through the use of Twilio. This
+                                            application
+                                            was created using React and MDBootstrap on the front end. Data is stored in
+                                            a MySQL
+                                            database with the use of Sequelize NPM.
                                         </p>
                                         <div class="button-container">
                                             <div class="portfolioContainerLink">
@@ -674,6 +683,94 @@
                     <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
             </section>
 
+            <!-- Skills and continued learning Section -->
+
+            <section id="skills" class="container-fluid background-image main-content row">
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12 justify-content-start main-container">
+                    <div class="row bg-white">
+
+                        <!-- Main Skills Content -->
+                        <div class="content-card col-xl 12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h2 class="headingTwo">Skills</h2>
+                            <hr>
+                            <div class="row skills-row">
+
+                                <div class="col-xs-12 col-lg-4">
+                                    <h6 class="skill-header">Front End</h6>
+                                    <p class="skill">HTML / HTML5</p>
+                                    <div class="progress blue lighten-4">
+                                        <div id="php-skill" class="determinate blue" data-percent='90'></div>
+                                    </div>
+                                    <p class="skill">JavaScript / JQuery</p>
+                                    <div class="progress blue lighten-4">
+                                        <div class="determinate blue" data-percent='75'></div>
+                                    </div>
+                                    <p class="skill">React.JS</p>
+                                    <div class="progress blue lighten-4">
+                                        <div class="determinate blue" data-percent='60'></div>
+                                    </div>
+                                    <p class="skill">CSS / CSS3</p>
+                                    <div class="progress blue lighten-4">
+                                        <div class="determinate blue" data-percent='90'></div>
+                                    </div>
+                                    <p class="skill">Bootstrap / MDBootstrap</p>
+                                    <div class="progress blue lighten-4">
+                                        <div class="determinate blue" data-percent='90'></div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-4">
+                                    <h6 class="skill-header">Back End</h6>
+                                    <p class="skill">Express.JS</p>
+                                    <div class="progress cyan lighten-4">
+                                        <div class="determinate cyan" data-percent='50'></div>
+                                    </div>
+                                    <p class="skill">Node.JS</p>
+                                    <div class="progress cyan lighten-4">
+                                        <div class="determinate cyan" data-percent='50'></div>
+                                    </div>
+                                    <p class="skill">MVC Framework</p>
+                                    <div class="progress cyan lighten-4">
+                                        <div class="determinate cyan" data-percent='80'></div>
+                                    </div>
+                                    <p class="skill">MongoDB</p>
+                                    <div class="progress cyan lighten-4">
+                                        <div class="determinate cyan" data-percent='40'></div>
+                                    </div>
+                                    <p class="skill">MySQL</p>
+                                    <div class="progress cyan lighten-4">
+                                        <div class="determinate cyan" data-percent='75'></div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-4">
+                                    <h6 class="skill-header">Other</h6>
+                                    <p class="skill">Git</p>
+                                    <div class="progress light-blue lighten-4">
+                                        <div class="determinate light-blue" data-percent='90'></div>
+                                    </div>
+                                    <p class="skill">UI / UX Design</p>
+                                    <div class="progress light-blue lighten-4">
+                                        <div class="determinate light-blue" data-percent='90'></div>
+                                    </div>
+                                    <p class="skill">Microsoft Office Suites</p>
+                                    <div class="progress light-blue lighten-4">
+                                        <div class="determinate light-blue" data-percent='95'></div>
+                                    </div>
+                                    <p class="skill">Adobe Suites</p>
+                                    <div class="progress light-blue lighten-4">
+                                        <div class="determinate light-blue" data-percent='40'></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- End of main form content -->
+
+                    </div>
+                </div>
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+            </section>
+
             <!-- Contact Me / Form Section -->
 
             <section id="contactMe" class="container-fluid background-image main-content row">
@@ -715,23 +812,42 @@
             <footer class="gradient page-footer container-fluid font-small blue">
 
                 <div class="mb-5">
+                    <h6 class="text-uppercase footer-title font-weight-bold mt-5">Thank You For Visiting!</h6>
+                    <div class="container-fluid">
+                        <div class="row footer-row">
+                            <div class="col-xs-12 col-lg-4">
+                                <h6 class="text-uppercase footer-title font-weight-bold mt-5">Contact</h6>
+                                <hr class="accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                                <div class="contact-info">
+                                    <p><i class="fas fa-home mr-3"></i> Bothell, WA 98021 USA</p>
+                                    <p><i class="fas fa-envelope mr-3"></i> wandrew8@gmail.com</p>
+                                    <p><i class="fas fa-phone mr-3"></i> 206.775.3688</p>
+                                </div>
 
-                    <h6 class="text-uppercase footer-title font-weight-bold mt-5">Contact</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <i class="fas fa-home mr-3"></i> Bothell, WA 98021 USA</p>
-                    <p>
-                        <i class="fas fa-envelope mr-3"></i> wandrew8@gmail.com</p>
-                    <p>
-                        <i class="fas fa-phone mr-3"></i> 206.775.3688</p>
+                            </div>
+                            <div class="col-xs-12 col-lg-4">
+                                <img class="footerPhoto" src="./assets/images/Me.jpg" alt="Profile Photo">
 
+                            </div>
+                            <div class="col-xs-12 col-lg-4">
+                                <h6 class="text-uppercase footer-title font-weight-bold mt-5">Navigation</h6>
+                                <hr class="accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                                <div class="contact-info">
+                                    <a id="footerAboutMeLink" class="footer-nav">About Me</a>
+                                    <a id="footerPortfolioLink" class="footer-nav">Portfolio</a>
+                                    <a id="footerSkillsLink" class="footer-nav">Skills</a>
+                                    <a class="footer-nav" href="assets/images/Resume 2019 (Education).pdf"
+                                        target="_blank">Resume</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <a class="icon" href="https://github.com/wandrew8" target="_blank"><span
                             style="font-size: 3em; color: white;"><i class="fab fa-github-square"></i></span></a>
                     <a class="icon" href="https://www.linkedin.com/in/andrew-weiss-18a2bb75/" target="_blank"><span
                             style="font-size: 3em; color: white;"><i class="fab fa-linkedin"></i></span></a>
                     <a class="icon" href="https://www.facebook.com/andy.weiss.988?ref=bookmarks" target="_blank"><span
                             style="font-size: 3em; color: white;"><i class="fab fa-facebook-square"></i></span></a>
-
                 </div>
             </footer>
 
@@ -741,14 +857,12 @@
         </main>
     </div>
 </body>
-
 <script src="https://use.fontawesome.com/releases/v5.10.2/js/all.js" data-auto-replace-svg="nest"></script>
-<!-- Bootstrap core JavaScript -->
 <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="assets/JavaScript/app.js"></script>
 
 </html>
