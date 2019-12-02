@@ -401,6 +401,28 @@ main {
     transform: skew(8deg) rotate(3deg);
 }
 
+.come-in {
+    transform: translateY(200px);
+    animation: come-in 1.5s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+    animation-duration: 0.6s;
+    /* So they look staggered */
+}
+
+@keyframes come-in {
+    to {
+        transform: translateY(0);
+    }
+}
+
+.portfolio>ul>li:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(30px);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+}
+
 /* Main Content */
 
 h2 {
@@ -507,12 +529,6 @@ h5 {
 .portfolio>ul>li {
     border: 1px solid #E2E2E2;
     border-radius: .5rem;
-}
-
-.portfolio>ul>li:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transform: translateY(0.25rem);
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
 }
 
 .portfolio>ul>li>figure {
