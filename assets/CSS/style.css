@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Open sans', sans-serif;
     font-weight: 300 !important;
@@ -593,6 +597,7 @@ h5 {
 .skill {
     padding: 0rem;
     margin: 5px 0px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .skills-row {
@@ -606,17 +611,20 @@ h5 {
     transition-timing-function: ease-out !important;
 }
 
-/* Form Styling */
-
-form>div>a {
-    padding: .5rem 1rem;
-    margin: .5rem;
+.skill:hover {
+    transform: scale(1.5) translate(1.5rem);
+    background-color: #ffeaa7;
+    width: auto;
 }
 
-form a {
-    background-color: #1B9CFC;
+/* Form Styling */
+
+form .btn {
+    padding: .5rem 1rem;
+    margin: .5rem;
     text-decoration: none;
     color: white;
+    background-color: #1B9CFC;
     border-radius: .25rem;
     text-align: center;
     display: inline-block;
@@ -752,6 +760,9 @@ footer p, .footer-nav {
     }
     .portfolio>ul>li {
         margin: 2rem 0rem;
+    }
+    .footer-row {
+        width: 100vw;
     }
 }
 
