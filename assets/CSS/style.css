@@ -613,7 +613,6 @@ h5 {
 
 .skill:hover {
     transform: scale(1.5) translate(15%);
-    width: auto;
 }
 
 /* Form Styling */
