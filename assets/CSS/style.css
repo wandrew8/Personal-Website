@@ -371,6 +371,16 @@ main {
 
 /* Content Cards */
 
+.module {
+    transition: all 1s;
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+.hide-card {
+    opacity: 0;
+}
+
 .content-card {
     padding: 2rem;
     border-radius: 0.5rem;
@@ -405,26 +415,10 @@ main {
     transform: skew(8deg) rotate(3deg);
 }
 
-.come-in {
-    transform: translateY(200px);
-    animation: come-in 1.5s ease forwards;
-}
-
-.come-in:nth-child(odd) {
-    animation-duration: 0.6s;
-    /* So they look staggered */
-}
-
-@keyframes come-in {
-    to {
-        transform: translateY(0);
-    }
-}
-
 .portfolio>ul>li:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transform: translateY(30px);
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    transform: translateY(1px);
+    transition: transform 0.3s;
 }
 
 /* Main Content */
@@ -526,7 +520,7 @@ h5 {
     padding: initial;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
     list-style-type: none;
 }
 
@@ -566,7 +560,7 @@ h5 {
     line-height: 1.5;
     padding: 0rem .75rem;
     color: #666666;
-    height: 75px;
+    height: 140px;
     overflow: auto;
 }
 

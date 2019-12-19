@@ -123,47 +123,26 @@ function loadSkills() {
     });
   }
   
-//Slide in Cards Effect 
-(function($) {
 
-    /**
-     * Copyright 2012, Digital Fusion
-     * Licensed under the MIT license.
-     * http://teamdf.com/jquery-plugins/license/
-     *
-     * @author Sam Sehnert
-     * @desc A small plugin that checks whether elements are within
-     *     the user visible viewport of a web browser.
-     *     only accounts for vertical position, not horizontal.
-     */
-  
-    $.fn.visible = function(partial) {
-      
-        var $t            = $(this),
-            $w            = $(window),
-            viewTop       = $w.scrollTop(),
-            viewBottom    = viewTop + $w.height(),
-            _top          = $t.offset().top,
-            _bottom       = _top + $t.height(),
-            compareTop    = partial === true ? _bottom : _top,
-            compareBottom = partial === true ? _top : _bottom;
-      
-      return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-  
-    };
-      
-  })(jQuery);
+// Scroll Fade in effects using Intersection Observer API
+const cards = document.querySelectorAll('.module');
 
-  $(window).scroll(function(event) {
-  
-    $(".module").each(function(i, el) {
-      var el = $(el);
-      if (el.visible(true)) {
-        el.addClass("come-in"); 
-      } 
-    });
-    
-  });
+ob = new IntersectionObserver(obCallback)
+cards.forEach(card => {
+    ob.observe(card);
+});
 
+function obCallback(card) {
+    card.forEach(item => {
+        const cardItem = item.target;
+        if (item.intersectionRatio > 0) {
+            cardItem.classList.remove('hide-card');
+            cardItem.classList.add('module');
 
+        } else {
+            cardItem.classList.add('hide-card');
+            cardItem.classList.remove('module');
 
+        }
+    })
+}
