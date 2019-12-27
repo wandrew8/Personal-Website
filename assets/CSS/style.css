@@ -417,7 +417,6 @@ main {
 
 .portfolio>ul>li:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transform: translateY(1px);
     transition: transform 0.3s;
 }
 
@@ -560,7 +559,7 @@ h5 {
     line-height: 1.5;
     padding: 0rem .75rem;
     color: #666666;
-    height: 140px;
+    height: 144px;
     overflow: auto;
 }
 

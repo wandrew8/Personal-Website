@@ -8,11 +8,6 @@ var colors = new Array(
     [15, 185, 177]);
 
 var step = 0;
-//color table indices for: 
-// current color left
-// next color left
-// current color right
-// next color right
 var colorIndices = [0, 1, 2, 3];
 
 //transition speed
@@ -50,7 +45,7 @@ function updateGradient() {
         color: "-moz-linear-gradient(left, " + color1 + " 0%, " + color2 + " 100%)"
     });
 
-    //     -webkit-background-clip: text;
+    // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
 
     step += gradientSpeed;
