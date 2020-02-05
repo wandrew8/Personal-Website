@@ -479,6 +479,8 @@ main {
 .portfolio > ul > li:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: transform 0.3s;
+  transform: scale(1.001);
+  transform: translateY(-8px);
 }
 
 /* Main Content */
@@ -637,7 +639,7 @@ h5 {
 }
 
 .portfolio img {
-  transition-duration: 4s;
+  transition-duration: 0.2s;
 }
 
 .portfolioPhoto:hover {
@@ -645,7 +647,7 @@ h5 {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   z-index: 0;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 /* Skills Styling */
