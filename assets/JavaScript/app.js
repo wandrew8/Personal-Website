@@ -158,3 +158,21 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
+const searchButton = document.querySelector('#search');
+
+searchButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    const selectValue = document.querySelector('#tech').value;    
+    const projectArray = Array.from(document.querySelectorAll('.project'));
+    projectArray.forEach(function(project) {
+        if (!project.getAttribute('data-tech').includes(selectValue)) {
+            project.classList.add('hidden');
+        }
+        else {
+            project.classList.remove('hidden')
+        }
+    })
+    console.log(selectValue)
+    console.log(projectArray)
+})

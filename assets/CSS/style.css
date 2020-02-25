@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -29,6 +33,26 @@ a,
 
 .headingTwo {
   text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  display: inline-block;
+}
+
+.search button {
+  background-color: #1b9cfc;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s;
 }
 
 /* Opening Page */
@@ -1109,6 +1133,12 @@ footer p,
   }
   .footer-row {
     width: 100vw;
+  }
+  .search {
+    display: block;
+  }
+  .searchbar {
+    display: block;
   }
 }
 
