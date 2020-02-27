@@ -176,3 +176,89 @@ searchButton.addEventListener('click', function(e) {
     console.log(selectValue)
     console.log(projectArray)
 })
+
+//Lottie Animation OnClick Events
+const svgContainer1 = document.getElementById('svgContainer1');
+const svgContainer2 = document.getElementById('svgContainer2');
+const svgContainer3 = document.getElementById('svgContainer3');
+const svgContainer4 = document.getElementById('svgContainer4');
+
+const animationButton1 = document.querySelector('.animation-button1');
+const animationButton2 = document.querySelector('.animation-button2');
+const animationButton3 = document.querySelector('.animation-button3');
+const animationButton4 = document.querySelector('.animation-button4');
+
+
+const pop = bodymovin.loadAnimation({
+    wrapper: svgContainer1,
+    renderer: 'svg',
+    loop: 1,
+    path: 'https://assets5.lottiefiles.com/packages/lf20_8Psf5B.json'
+});
+
+const confirm = bodymovin.loadAnimation({
+    wrapper: svgContainer2,
+    renderer: 'svg',
+    loop: 1,
+    path: 'https://assets1.lottiefiles.com/packages/lf20_QKHsU2.json'
+});
+
+const lines = bodymovin.loadAnimation({
+    wrapper: svgContainer3,
+    renderer: 'svg',
+    loop: 1,
+    path: 'https://assets10.lottiefiles.com/packages/lf20_OANf6P.json'
+});
+
+const clicky = bodymovin.loadAnimation({
+    wrapper: svgContainer4,
+    renderer: 'svg',
+    loop: 1,
+    path: 'https://assets5.lottiefiles.com/datafiles/xagAVK6Z2hhaURL/data.json'
+});
+
+
+function startAnimation(anim) {
+    console.log('clicked')
+	anim.setDirection(1);
+	anim.goToAndStop(1);
+    anim.play();	
+}
+
+animationButton1.addEventListener('click', function() {
+    startAnimation(pop)
+})
+
+svgContainer2.style.opacity = 0;
+animationButton2.addEventListener('click', function() {
+        svgContainer2.style.opacity = 1;
+        startAnimation(confirm)
+        setTimeout(() => {
+            svgContainer2.animate([
+                {opacity: 1},
+                {opacity: 0},
+            ], {
+                duration: 500
+            })
+            svgContainer2.style.opacity = 0;
+        }, 2000);  
+})
+
+animationButton3.addEventListener('click', function() {
+    startAnimation(lines)
+})
+
+svgContainer4.style.opacity = 0;
+animationButton4.addEventListener('click', function() {
+        svgContainer4.style.opacity = 1;
+        startAnimation(clicky)
+        setTimeout(() => {
+            svgContainer4.animate([
+                {opacity: 1},
+                {opacity: 0},
+            ], {
+                duration: 500
+            })
+            svgContainer4.style.opacity = 0;
+        }, 1500);  
+})
