@@ -262,3 +262,11 @@ animationButton4.addEventListener('click', function() {
             svgContainer4.style.opacity = 0;
         }, 1500);  
 })
+
+
+//Form Validation
+const emailInput = document.querySelector('#email');
+const message = document.querySelector('#message');
+
+
+ 
