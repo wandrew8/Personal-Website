@@ -56,7 +56,7 @@ h2, h3, a, .footer-title {
 #openingPage {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient( 45deg, rgba(56, 103, 214, 0.7), rgba(129, 236, 236, 0.7)), url("../images/mountain.jpg");
+  background-image: linear-gradient( 45deg, rgba(56, 103, 214, 1), rgba(129, 236, 236, 1));
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -701,6 +701,10 @@ form .btn {
 
 footer {
   height: auto;
+}
+
+footer a:hover {
+  text-decoration: none;
 }
 
 .contact-info {
